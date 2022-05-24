@@ -5,6 +5,6 @@
   font-family: "Poppins",sans-serif;
 }
 
-h1 {
-  color: red;
+.promo {
+  background: url("../img/ipad.jpg");
 }
