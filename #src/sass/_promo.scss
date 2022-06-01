@@ -1,0 +1,39 @@
+.promo {
+    padding-top: 205px;
+    min-height: 100vh;
+    position: relative;
+    background: url('../img/main_bg.jpg') no-repeat 50%/cover; 
+}
+
+
+.promo__title__block{
+   width: 340px;
+   position: relative;
+}
+
+.promo__btns {
+    width: 280px;
+    padding-top: 38px;
+    display: flex;
+    justify-content:space-between;
+    align-items: center;
+}
+
+.promo__circle {
+    position: relative;
+    z-index: 2;
+    &:before {
+        content: '';
+        width: 36px;
+        height: 36px;
+        border-radius: 100%;
+        background: $main-color;
+        position: absolute; 
+        z-index: -1;
+        left: -12px;
+        top: -9px;
+        
+    }
+}
+
+

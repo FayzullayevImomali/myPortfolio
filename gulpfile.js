@@ -18,7 +18,7 @@ let path = {
 
     src: {
         html: [source_folder + "/*.html", "!" + source_folder + "/_*.html"],
-        css: source_folder +"/sass/*.sass",
+        css: source_folder +"/sass/*.scss",
         js: source_folder + "/js/*.js",
         fonts: source_folder + "/fonts/",
         img: source_folder + "/img/**/*.{jpg,png,svg,gif,ico,webp}",
@@ -27,7 +27,7 @@ let path = {
 
     watch: {
         html: source_folder + "/**/*.html",
-        css: source_folder + "/sass/**/*.sass",
+        css: source_folder + "/sass/**/*.scss",
         js: source_folder + "/js/*.js",
         fonts: source_folder + "/fonts/",
         img: source_folder + "/img/**/*.{jpg,png,svg,gif,ico,webp}",
@@ -104,7 +104,7 @@ function css (){
         .pipe(group_media())
         .pipe(
             gulpAutoprefixer({
-                overrideBrowserList: ["all version"],
+                overrideBrowserList: ["last 5 version"],
                 cascade: true
             })
         )
@@ -113,10 +113,9 @@ function css (){
         .pipe(clean_css())
         .pipe(
             rename({
-                extname: "min.css"
+                extname: ".min.css"
             })
         )
-        
         .pipe(dest(path.build.css))
         .pipe(browsersync.stream())
 

@@ -1,0 +1,23 @@
+.promo {
+    .hamburger {
+        width: 44;
+        position: absolute;
+        top: 20px;
+        right: 30px;
+        display: flex;
+        flex-direction:column;
+        align-items: flex-end;
+       
+
+        span {
+            margin: 3px 0;
+            width: 36px;
+            height: 3px;
+            background: #fff; 
+        };
+        span.long {
+            width: 42px;
+           
+        }
+    }
+}

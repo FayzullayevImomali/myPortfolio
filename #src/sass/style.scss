@@ -1,0 +1,22 @@
+
+@import 'variables';
+@import url('https://fonts.googleapis.com/css2?family=MuseoModerno:wght@500&family=Poppins:ital,wght@0,500;0,700;1,400;1,600&family=Roboto:wght@400;500&display=swap');
+@import 'promo';
+@import 'title';
+@import 'btn';
+@import 'mixins';
+@import 'sidebar';
+@import 'menu.scss';
+
+* {
+    font-family: 'Poppins' , sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.container {
+    width: 1140px;
+    margin: 0 auto;
+}
+

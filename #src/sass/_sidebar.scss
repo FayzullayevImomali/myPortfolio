@@ -1,0 +1,38 @@
+.sidebar {
+    position: absolute;
+    height: 339px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    // align-items: center;
+    z-index: 3;
+    top: 230px;
+    left: 50px;
+    &__divider {
+        width: 2px;
+        height: 70px;
+        background-color: #fff;
+        
+    }
+
+    &__link {
+        &:hover {
+            svg path{
+                fill: $main-color;
+            }
+        }
+    }
+    &__text {
+        color: #fff;
+        width: 25px;
+        height: 160px;
+        letter-spacing: 1px;
+        span {
+            display: block;
+            transform: rotate(-90deg) translate(-70px, -64px);
+            width: 150px;
+        }
+        
+    }
+}
