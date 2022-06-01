@@ -1,0 +1,13 @@
+.promo__links {
+  font-weight: 700;
+  font-size: 15px;
+  line-height: 21px;
+  color: #fff;
+  text-decoration: none;
+  letter-spacing: 1px;
+}
+
+.btn {
+  padding: 12px 25px;
+  background-color: #ffa501;
+}

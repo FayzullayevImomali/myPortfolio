@@ -1,0 +1,166 @@
+@import "https://fonts.googleapis.com/css2?family=MuseoModerno:wght@500&family=Poppins:ital,wght@0,500;
+
+0,
+700;1,
+400;1,
+600&family=Roboto:wght@400;500&display=swap";.promo {
+  padding-top: 205px;
+  min-height: 100vh;
+  position: relative;
+  background: url("../img/main_bg.jpg") no-repeat 50%/cover;
+}
+
+.promo__title__block {
+  width: 340px;
+  position: relative;
+}
+
+.promo__btns {
+  width: 280px;
+  padding-top: 38px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.promo__circle {
+  position: relative;
+  z-index: 2;
+}
+
+.promo__circle:before {
+  content: "";
+  width: 36px;
+  height: 36px;
+  border-radius: 100%;
+  background: #ffa501;
+  position: absolute;
+  z-index: -1;
+  left: -12px;
+  top: -9px;
+}
+
+.title {
+  font-style: normal;
+  font-weight: 700;
+  color: #fff;
+}
+
+.title__fz16 {
+  font-size: 16px;
+  padding-bottom: 8px;
+  z-index: 1;
+  letter-spacing: 1px;
+}
+
+.title__fz48 {
+  font-size: 48;
+}
+
+.promo__links {
+  font-weight: 700;
+  font-size: 15px;
+  line-height: 21px;
+  color: #fff;
+  text-decoration: none;
+  letter-spacing: 1px;
+}
+
+.btn {
+  padding: 12px 25px;
+  background-color: #ffa501;
+}
+
+.sidebar {
+  position: absolute;
+  height: 339px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  z-index: 3;
+  top: 230px;
+  left: 50px;
+}
+
+.sidebar__divider {
+  width: 2px;
+  height: 70px;
+  background-color: #fff;
+}
+
+.sidebar__link:hover svg path {
+  fill: #ffa501;
+}
+
+.sidebar__text {
+  color: #fff;
+  width: 25px;
+  height: 160px;
+  letter-spacing: 1px;
+}
+
+.sidebar__text span {
+  display: block;
+  transform: rotate(-90deg) translate(-70px, -64px);
+  width: 150px;
+}
+
+.promo .hamburger {
+  width: 44;
+  position: absolute;
+  top: 20px;
+  right: 30px;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+  cursor: pointer;
+}
+
+.promo .hamburger span {
+  margin: 3px 0;
+  width: 36px;
+  height: 3px;
+  background: #fff;
+}
+
+.promo .hamburger span.long {
+  width: 42px;
+}
+
+.menu {
+  position: fixed;
+  top: 0;
+  width: 100%;
+  height: 100vh;
+  z-index: 10;
+  transition: all .6s;
+}
+
+.menu__block {
+  position: relative;
+  width: 345px;
+  background: #ffa501;
+  height: 100%;
+  padding-top: 140px;
+  padding-left: 40px;
+}
+
+.menu .close {
+  position: absolute;
+  top: 24px;
+  right: 25px;
+  cursor: pointer;
+}
+
+* {
+  font-family: "Poppins",sans-serif;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.container {
+  width: 1140px;
+  margin: 0 auto;
+}
