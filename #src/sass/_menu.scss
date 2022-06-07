@@ -24,13 +24,18 @@
 .menu {
     position: fixed;
     top: 0;
-    // left: -100%;
+    left: -100%;
     width: 100%;
     height: 100vh;
     z-index: 10;
-    // visibility: hidden;
-    // opacity: 0;
+    visibility: hidden;
+    opacity: 0;
     transition: all 0.6s;
+    &.active {
+        left: 0;
+        visibility: visible;
+        opacity: 1;
+    }
     &__block {
         position: relative;
         width: 345px;
@@ -38,6 +43,7 @@
         height: 100%;
         padding-top: 140px;
         padding-left: 40px;
+        z-index: 10;
     }
     .close {
         position: absolute;
@@ -45,4 +51,56 @@
         right: 25px;
         cursor: pointer;
     }
+    &__list {
+        list-style-type: none;
+        & a {
+            text-decoration: none;
+        }
+        .menu__items{
+            padding-bottom: 15px;
+            font-size: 24px;
+            color: #fff;
+            & a {
+                color: #fff;
+                font-weight: bold;
+            }
+            &:before{
+                content: '';
+                position: absolute;
+                width: 14px;
+                height: 14px;
+                border: 1px solid #000000;
+                border-radius: 50%; 
+                left: 9px;
+                margin-top: 4px;  
+                transition: all .6s;
+                
+            }
+            &:hover {
+               &:before {
+                   background-color: #fff;
+               }
+            }
+        }
+
+    
+           
+    }
+    .social__icons {
+        width: 100px;
+        margin: 285px auto 0px 85px;
+        display: flex;
+        justify-content: space-around;
+    }
 }
+
+.menu__overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: #fff;
+    opacity: .75;
+}
+
