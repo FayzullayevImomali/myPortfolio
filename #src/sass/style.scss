@@ -6,7 +6,8 @@
 @import 'btn';
 @import 'mixins';
 @import 'sidebar';
-@import 'menu.scss';
+@import 'menu';
+@import 'second.scss';
 
 * {
     font-family: 'Poppins' , sans-serif;
@@ -19,4 +20,25 @@
     width: 1140px;
     margin: 0 auto;
 }
+
+.black {
+    color: #000;
+}
+
+.title__fz16 {
+    font-size: 16px;
+    padding-bottom: 8px;
+    z-index: 1;
+    letter-spacing: 1px;
+    
+}
+
+.title__fz48 {
+    font-size: 48px;
+}
+
+.title__fz36 {
+    font-size: 36px;
+}
+
 

@@ -11,7 +11,7 @@
 }
 
 .promo__title__block {
-  width: 340px;
+  width: 530px;
   position: relative;
 }
 
@@ -40,9 +40,25 @@
   top: -9px;
 }
 
+.promo__circle2 {
+  position: relative;
+  z-index: 2;
+}
+
+.promo__circle2:before {
+  content: "";
+  width: 36px;
+  height: 36px;
+  border-radius: 100%;
+  background: #ffa501;
+  position: absolute;
+  z-index: -1;
+  left: -16px;
+  top: -15px;
+}
+
 .title {
   font-style: normal;
-  font-weight: 700;
   color: #fff;
 }
 
@@ -54,7 +70,7 @@
 }
 
 .title__fz48 {
-  font-size: 48;
+  font-size: 48px;
 }
 
 .promo__links {
@@ -215,6 +231,84 @@
   opacity: .75;
 }
 
+.about {
+  padding-top: 128px;
+  display: grid;
+  grid-template-columns: 400px 1fr;
+}
+
+.about__descr {
+  margin-left: 70px;
+}
+
+.about__descr .about__subtitle {
+  padding-bottom: 6px;
+  font-weight: bold;
+}
+
+.about__descr .about__title {
+  padding-bottom: 5px;
+}
+
+.about__descr .line {
+  width: 60px;
+  height: 3px;
+  background-color: #ffa501;
+  margin-bottom: 20px;
+}
+
+.about__descr .skills {
+  margin-top: 40px;
+  display: grid;
+  grid-template-columns: repeat(2, minmax(250px, 1fr));
+  grid-auto-columns: 250px;
+  -moz-column-gap: 50px;
+       column-gap: 50px;
+}
+
+.about__descr .skills .web {
+  display: flex;
+  margin-bottom: 40px;
+}
+
+.about__descr .skills .web__image {
+  margin-right: 20px;
+}
+
+.about__descr .skills .web__content__title {
+  font-style: normal;
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 21px;
+  color: #000;
+  padding-bottom: 10px;
+}
+
+.about__descr .skills .web__descr {
+  font-style: normal;
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 18px;
+  color: #000;
+}
+
+.about__brief {
+  font-style: normal;
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 21px;
+  padding-bottom: 40px;
+}
+
+.about__image {
+  height: 600px;
+}
+
+.about__image img {
+  width: 100%;
+  height: 100%;
+}
+
 * {
   font-family: "Poppins",sans-serif;
   margin: 0;
@@ -225,4 +319,23 @@
 .container {
   width: 1140px;
   margin: 0 auto;
+}
+
+.black {
+  color: #000;
+}
+
+.title__fz16 {
+  font-size: 16px;
+  padding-bottom: 8px;
+  z-index: 1;
+  letter-spacing: 1px;
+}
+
+.title__fz48 {
+  font-size: 48px;
+}
+
+.title__fz36 {
+  font-size: 36px;
 }
