@@ -1,0 +1,12 @@
+.about2 {
+    padding-top: 120px;
+    &__wrapper2 {
+        display: grid;
+        grid-template-columns: 600px ,1fr;
+        .about__image2 {
+            img {
+                width: 100%;
+            }
+        }
+    }
+}
