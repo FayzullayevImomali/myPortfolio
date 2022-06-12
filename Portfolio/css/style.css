@@ -281,6 +281,7 @@
   grid-auto-flow: dense;
   grid-template-rows: minmax(120px, auto);
   grid-auto-rows: minmax(120px, auto);
+  row-gap: 70px;
 }
 
 .about_wrapper .skills_wrapper .skills_blog {

@@ -40,6 +40,7 @@
             grid-auto-flow: dense;
             grid-template-rows: minmax(120px , auto);
             grid-auto-rows: minmax(120px , auto);
+            row-gap: 70px;
             .skills_blog{
                 display: grid;
                 grid-template-columns: 45px 200px;
