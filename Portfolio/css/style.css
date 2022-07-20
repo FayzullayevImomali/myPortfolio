@@ -281,7 +281,7 @@
   grid-auto-flow: dense;
   grid-template-rows: minmax(120px, auto);
   grid-auto-rows: minmax(120px, auto);
-  row-gap: 70px;
+  row-gap: 50px;
 }
 
 .about_wrapper .skills_wrapper .skills_blog {
@@ -304,19 +304,6 @@
   font-size: 12px;
   line-height: 18px;
   color: #000;
-}
-
-.about2 {
-  padding-top: 120px;
-}
-
-.about2__wrapper2 {
-  display: grid;
-  grid-template-columns: 600px,1fr;
-}
-
-.about2__wrapper2 .about__image2 img {
-  width: 100%;
 }
 
 * {
@@ -349,4 +336,44 @@
 
 .title__fz36 {
   font-size: 36px;
+  text-transform: capitalize;
+}
+
+.experiance {
+  position: relative;
+  padding: 120px 0;
+}
+
+.experianceCircle {
+  position: relative;
+  z-index: 2;
+}
+
+.experianceCircle::before {
+  content: "";
+  width: 48px;
+  height: 48px;
+  border-radius: 50%;
+  background-color: #ffa501;
+  position: absolute;
+  z-index: -1;
+  top: -8px;
+  left: 544px;
+}
+
+.experSubTitle {
+  text-align: center;
+  padding-bottom: 20px;
+}
+
+.experTitle {
+  text-align: center;
+}
+
+.headerDivider {
+  width: 60px;
+  height: 3px;
+  background-color: #ffa501;
+  margin: 0 auto;
+  margin-top: 25px;
 }
