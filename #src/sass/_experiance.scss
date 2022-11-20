@@ -33,5 +33,88 @@
     background-color: $main-color;
     margin: 0 auto;
     margin-top: 25px;
-    
 }
+
+.resume_wrapper {
+    padding: 60px 65px 0 65px;
+    display: grid;
+    grid-template-columns: repeat(2, 417px);
+    column-gap: 135px;
+    .resume__column-title {
+        position: relative;
+        padding-left: 35px;
+        &::before {
+            content: '';
+            position: absolute;
+            left: -7px;
+            top: 50%;
+            transform: translateY(-50%);
+            width: 15px;
+            height: 15px;
+            background-color: $main-color;
+            border-radius: 100%;
+        }
+        
+    }
+    ul {
+        list-style-type: none;
+        li {
+            position: relative;
+            &::after {
+                content: '';
+                position: absolute;
+                width: 1px;
+                height: calc(100% + 8px);
+                top: -8px;
+                left: 0px;
+                background-color: #000;   
+            }
+           .resume__item {
+            //position: relative;
+                &::before{
+                    content: '';
+                    width: 44px;
+                    height: 1px;
+                    top: 63px;
+                    position: absolute;
+                    background-color: #000;
+                }
+           }
+        }
+        
+    }
+    .resume__item-head {
+        position: relative;
+        padding: 45px 0 0 100px;
+        .resume__item-location {
+            font-weight: 500;
+            font-size: 12px;
+            line-height: 18px;
+        }
+    }
+    .resume__item-body {
+        padding: 12px 0 0 43px;
+    }
+
+    .resume__item-icon   {
+        position: absolute;
+        top: 45px;
+        left: 44px;
+        z-index: 10;
+        @include before__circle;
+        img {
+            z-index: 10;
+            position: absolute;
+            top: 14px;
+            left: 17.61px;
+        }
+    }
+
+    .resume__item-body {
+        font-size: 12px;
+        line-height: 18px;
+        color: #000000;
+    }
+    
+}  
+
