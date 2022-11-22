@@ -10,6 +10,7 @@
         .progressbar__container-item-header {
             display: flex;
             justify-content: space-between;
+            padding-bottom: 27px;
         }
         &-item-title {
             padding-right: 12px;
@@ -36,26 +37,18 @@
             font-size: 14px;
             line-height: 21px;
         }
-
-        &-item-progress {
-            padding-top: 26px;
-            display: flex;
-        }
-        .complete {
-            height: 15px;
-            background-color: #FFA501;;
-            border-radius: 4px;
-            margin: 0;
-            padding: 0;
-        }
-        .uncomplete {
-            height: 15px;
+        .rating__line {
+            position: relative;
+            width: 100%;
+            height: 14px;
             background-color: #E8E4DE;
             border-radius: 4px;
-            margin: 0;
-            padding: 0;
-            border-top-left-radius: 0px;
-            border-bottom-left-radius: 0px;
+            .rating__line-progress {
+                display: block;
+                height: 14px;
+                background-color: #ffa501;
+                border-radius: 4px;
+            }
         }
     }
 }
