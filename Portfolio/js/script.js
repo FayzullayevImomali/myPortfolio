@@ -11,10 +11,12 @@ const hamburger = document.querySelector('.hamburger'),
 
 hamburger.addEventListener('click', () => {
     menu.classList.add('active');
+    hamburger.style.display = 'none';
 });
 
 close.addEventListener('click' , () => {
     menu.classList.remove('active');
+    hamburger.style.display = 'flex';
 });
 
 
