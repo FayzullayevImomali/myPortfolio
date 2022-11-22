@@ -389,12 +389,13 @@
 
 .progressbar__wrapper {
   width: 100%;
+  padding-bottom: 126px;
 }
 
 .progressbar__wrapper .progressbar__container {
   display: grid;
-  grid-template-columns: repeat(3, minmax(350px, auto));
-  grid-template-rows: repeat(2, minmax(70px, auto));
+  grid-template-columns: repeat(3, minmax(auto, 350px));
+  grid-template-rows: repeat(2, minmax(auto, 70px));
   -moz-column-gap: 45px;
        column-gap: 45px;
   row-gap: 30px;
@@ -453,6 +454,36 @@
   padding: 0;
   border-top-left-radius: 0px;
   border-bottom-left-radius: 0px;
+}
+
+.portfolio__wrapper {
+  padding-bottom: 120px;
+  width: 100%;
+}
+
+.portfolio__wrapper-title {
+  position: relative;
+  text-align: center;
+}
+
+.portfolio__wrapper-title:before {
+  content: "";
+  width: 36px;
+  height: 36px;
+  background: #ffa501;
+  border-radius: 100%;
+  z-index: -1;
+  position: absolute;
+}
+
+.portfolio__wrapper-title::before {
+  top: -5px;
+  left: 50%;
+  transform: translateX(-50%);
+}
+
+.portfolio__wrapper-subtitle {
+  text-align: center;
 }
 
 * {

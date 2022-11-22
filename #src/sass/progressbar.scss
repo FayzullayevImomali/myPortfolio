@@ -1,9 +1,10 @@
 .progressbar__wrapper {
     width: 100%;
+    padding-bottom: 126px;
     .progressbar__container {
         display: grid;
-        grid-template-columns: repeat(3, minmax(350px , auto));
-        grid-template-rows: repeat(2, minmax(70px, auto));
+        grid-template-columns: repeat(3, minmax(auto , 350px));
+        grid-template-rows: repeat(2, minmax(auto, 70px));
         column-gap: 45px;
         row-gap: 30px;
         .progressbar__container-item-header {
